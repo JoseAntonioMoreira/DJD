@@ -1,0 +1,22 @@
+using System;
+
+namespace _8_Vegito
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int attack1 = 50 ,attack2 = 50;
+            int defense1 =100 , defense2 =100;
+            int intellect1 = 20, intellect2 = 30;
+
+            int totalatk, totaldef, totalint;
+
+            totalatk = (attack1 + attack2) / 2;
+            totaldef = (defense1 + defense2) / 2;
+            totalint = (intellect1 + intellect2) / 2;
+
+            Console.WriteLine("The fusion made an average of " + totalatk + " points of attack, \n" + totaldef + " points of defense and\n" + totalint + " points of intellect.");
+        }
+    }
+}
