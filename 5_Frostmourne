@@ -1,0 +1,24 @@
+using System;
+
+namespace _5_Frostmourne
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string name = "Sword of the Magistrate";
+            string rarity = "Blue";
+            float damage = 3.5f;
+            string description = "Sword of the powerfull magistrate";
+            string target_class = "Warriors and Paladins";
+            bool twoHanded = false;
+
+            Console.WriteLine("Name: " + name);
+            Console.WriteLine("Rarity: " + rarity);
+            Console.WriteLine("Damage: " + damage);
+            Console.WriteLine("Description: " + description);
+            Console.WriteLine("Target Class: " + target_class);
+            Console.WriteLine("TwoHanded: " + twoHanded);
+        }
+    }
+}
