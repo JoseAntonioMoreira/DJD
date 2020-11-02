@@ -1,0 +1,14 @@
+using System;
+
+namespace _9_LetsGetPumped
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int attackPower = 100;
+
+            Console.WriteLine("O ataque base é de " + attackPower + " \nO ataque carregado é " +attackPower*1.5f);
+        }
+    }
+}
