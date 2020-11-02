@@ -1,0 +1,15 @@
+using System;
+
+namespace _6_geegee
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int player = 100;
+            int SingleBlow = player;
+            player -= SingleBlow;
+            Console.WriteLine("gg \nYou have " + player + " life points");
+        }
+    }
+}
