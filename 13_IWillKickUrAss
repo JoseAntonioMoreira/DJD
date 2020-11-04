@@ -1,0 +1,37 @@
+using System;
+
+namespace _13_IWillKickUrAss
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            int hp1, hp2, atk1, atk2,md1,md2;
+
+            hp1 = r.Next(100,201);
+            atk1 = r.Next(10, 51);
+
+            hp2 = r.Next(100, 201);
+            atk2 = r.Next(10, 51);
+
+            md1 = hp2 / atk1;
+            md2 = hp1 / atk2;
+
+            Console.WriteLine(md1 + " " + md2);
+
+            if(md1 < md2)
+            {
+                Console.WriteLine("Player 1 vençe");
+            }
+            else if(md1 > md2)
+            {
+                Console.WriteLine("Player 2 vençe");
+            }
+            else
+            {
+                Console.WriteLine("Empate");
+            }
+        }
+    }
+}
