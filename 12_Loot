@@ -1,0 +1,43 @@
+using System;
+
+namespace _12_Loot
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            int roll;
+
+            roll = r.Next(101);
+
+            if(roll< 60)
+            {
+                Console.WriteLine("Normal drop " + roll);
+            }
+            else if (roll < 89)
+            {
+                Console.WriteLine("Uncommon drop " + roll);
+            }
+            else
+            {
+                Console.WriteLine("Rare drop " + roll);
+            }
+
+            roll = r.Next(101);
+
+            if (roll < 60)
+            {
+                Console.WriteLine("Normal drop " + roll);
+            }
+            else if (roll < 89)
+            {
+                Console.WriteLine("Uncommon drop " + roll);
+            }
+            else
+            {
+                Console.WriteLine("Rare drop " + roll);
+            }
+        }
+    }
+}
