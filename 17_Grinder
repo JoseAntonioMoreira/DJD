@@ -1,0 +1,24 @@
+using System;
+using System.Runtime.InteropServices.ComTypes;
+
+namespace _17_Grinder
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            int grinder, creature,avg;
+
+            grinder = r.Next(1000,100001);
+            creature = r.Next(35,66);
+            avg = grinder / creature;
+
+
+            if(avg > 10000)
+            {
+                Console.WriteLine("Achivement unlocked GRINDER! ");
+            }
+        }
+    }
+}
