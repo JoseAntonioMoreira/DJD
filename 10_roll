@@ -1,0 +1,29 @@
+using System;
+
+namespace _10_roll
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            int p1, p2;
+
+            p1 = r.Next(1,7);
+            p2 = r.Next(1,7);
+
+            if(p1 < p2)
+            {
+                Console.WriteLine("Player 2 leva o item");
+            }
+            else if(p1 > p2)
+            {
+                Console.WriteLine("Player 1 leva o item");
+            } 
+            else
+            {
+                Console.WriteLine("Rerroll");
+            }
+        }
+    }
+}
