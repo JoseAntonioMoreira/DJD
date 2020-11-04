@@ -1,0 +1,40 @@
+using System;
+
+namespace Medias
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            int n = r.Next(1, 31);
+            int[] alunos = new int[n];
+            int[] MaisAlto = new int[n];
+            int count = 0;
+
+
+            for(int i = 0; i<n; i++)
+            {
+                alunos[i] = r.Next(21);
+
+                if(alunos[i] >= 15)
+                {
+                    Console.WriteLine(alunos[i]);
+                }
+
+
+                if (MaisAlto[count] < alunos[i])
+                {
+                    MaisAlto[count] = alunos[i];
+                }
+                else if (MaisAlto[count] == alunos[i])
+                {
+                    count++;
+                    MaisAlto[count] = alunos[i];
+                }
+            }
+            
+            Console.WriteLine("A nota mais alta é: " + MaisAlto[count] + " e houve " + (count+1) + " pessoas que a obtiveram.");
+        }
+    }
+}
