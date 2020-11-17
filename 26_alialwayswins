@@ -1,0 +1,62 @@
+using System;
+
+namespace _26_alialwayswins
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            int hp1 = 100, hp2 = 100;
+            int atk1;
+            int atk2;
+            int n;
+            bool ko = false;
+
+            do
+            {
+                n = r.Next(1,3);
+                if(n == 1)
+                {
+                    Console.WriteLine("Block");
+                    Console.WriteLine("hp1 :" + hp1 + " hp2 :" +hp2);
+                }
+                else
+                {
+                    n = r.Next(1,3);
+                    if(n == 1)
+                    {
+                        atk1 = r.Next(1,50);
+                        hp2 -= atk1;
+                        Console.WriteLine("hp1 :" + hp1 + " hp2 :" + hp2);
+                    }
+                    else
+                    {
+                        atk1 = r.Next(50,100);
+                        hp2 -= atk1;
+                        Console.WriteLine("hp1 :" + hp1 + " hp2 :" + hp2);
+                    }
+
+
+                    n = r.Next(1, 3);
+                    if (n == 1)
+                    {
+                        atk2 = r.Next(1, 50);
+                        hp1 -= atk2;
+                        Console.WriteLine("hp1 :" + hp1 + " hp2 :" + hp2);
+                    }
+                    else
+                    {
+                        atk2 = r.Next(50, 100);
+                        hp1 -= atk2;
+                        Console.WriteLine("hp1 :" + hp1 + " hp2 :" + hp2);
+                    }
+                }
+                if(hp1 <= 0 || hp2 <= 0)
+                {
+                    ko = true;
+                }
+            } while (!ko);
+        }
+    }
+}
